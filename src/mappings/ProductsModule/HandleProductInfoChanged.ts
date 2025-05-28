@@ -87,8 +87,8 @@ const handleProductInfoChanged = async ({
     .onConflictDoNothing();
 
   await Promise.all([
-    productPromise,
     ...productPricePromises,
+    productPromise,
     currencySlicerPromise,
   ]);
 };
